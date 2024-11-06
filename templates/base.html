@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mkutano | Personal meeting Site</title>
+    <meta name="title" content="Mkutano | Connect, Host, and Join Meetups Effortlessly" data-rh="true"/>
+    <meta name="description"
+          content="Discover and participate in local meetups, host your own events, and build connections in your community with Mkutano – your platform for social engagement."
+          data-rh="true"/>
+    <meta name="keywords"
+          content="Mkutano, meetups, social platform, community events, host events, local meetups, networking, Kenyan meetups, African events"/>
+    <meta name="robots" content="index, follow"/>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://mkutano.co.ke" data-rh="true"/>
+    <meta property="og:title" content="Mkutano | Connect, Host, and Join Meetups Effortlessly" data-rh="true"/>
+    <meta property="og:description"
+          content="Join the Mkutano community to find and host meetups, share interests, and connect with people nearby."
+          data-rh="true"/>
+    <!-- custom CSS -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet"/>
+    <!-- image directory from static folder  {{ url_for('static', filename='images/xyz.jpg') }}-->
+    <!--Favicon-->
+    <link rel="shortcut icon" href="#" type="image/x-icon"/>
+    <link rel="icon" href="#" type="image/x-icon"/>
+    <!-- Bootstrap CSS -->
+
+</head>
+<body>
+{% include 'navbar/navbar.html' %}
+<section>
+    {% block content %}
+    {% endblock %}
+</section>
+{% include 'footer/footer.html' %}
+
+<!-- Custom JS -->
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+<!-- Vendor JS -->
+<script src="{{ url_for('static', filename='vendor/jQuery/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/bootstrap/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/slick/slick.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/g-map/gmap.js') }}"></script>
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+</body>
+</html>
+
+
+

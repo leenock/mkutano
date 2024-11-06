@@ -1,0 +1,146 @@
+{% block content %}
+    <section class="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="blog-section-title">
+                        <h2>Trending</h2>
+                        <p>View the latest on Mkutano</p>
+                    </div>
+                    <article class="blog-post">
+                        <div class="blog-post-thumb">
+                            <img src="{{ url_for('static', filename='images/blog/blog-thum-1.png') }}" alt="blog-thum"/>
+                        </div>
+                        <div class="blog-post-content">
+                            <div class="blog-post-tag">
+                                <a href="{{ url_for('index') }}">Travel</a>
+                            </div>
+                            <div class="blog-post-title">
+                                <a href="{{ url_for('index') }}">Five Things You Need to Know to Start Your Day</a>
+                            </div>
+                            <div class="blog-post-meta">
+                                <ul>
+                                    <li>By <a href="{{ url_for('index') }}">Mary Astor</a></li>
+                                    <li>
+                                        <i class="fa fa-clock-o"></i>
+                                        October 19, 2020 - 2 min
+                                    </li>
+                                </ul>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                nonumy.
+                            </p>
+                            <a href="{{ url_for('index') }}" class="blog-post-action">read more <i
+                                    class="fa fa-angle-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="blog-post">
+                        <div class="blog-post-thumb">
+                            <img src="{{ url_for('static', filename='images/blog/blog-thum-1.png') }}" alt="blog-thum"/>
+                        </div>
+                        <div class="blog-post-content">
+                            <div class="blog-post-tag">
+                                <a href="{{ url_for('index') }}">Travel</a>
+                            </div>
+                            <div class="blog-post-title">
+                                <a href="{{ url_for('index') }}">Five Things You Need to Know to Start Your Day</a>
+                            </div>
+                            <div class="blog-post-meta">
+                                <ul>
+                                    <li>By <a href="{{ url_for('index') }}">Mary Astor</a></li>
+                                    <li>
+                                        <i class="fa fa-clock-o"></i>
+                                        October 19, 2020 - 2 min
+                                    </li>
+                                </ul>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                nonumy.
+                            </p>
+                            <a href="{{ url_for('index') }}" class="blog-post-action">read more <i
+                                    class="fa fa-angle-right"></i></a>
+                        </div>
+                    </article>
+                    <div class="blog-post-pagination">
+                        <nav aria-label="Page navigation example" class="nav-bg">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link active" href="#">1</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-post-widget">
+                        <div class="latest-widget-title">
+                            <h2>For you</h2>
+                        </div>
+                        <div class="latest-widget">
+                            <div class="latest-widget-thum">
+                                <a href="{{ url_for('index') }}">
+                                    <img src="{{ url_for('static', filename='images/blog/blog-thum-8.png') }}"
+                                         alt="blog-thum"/></a>
+
+                                <div class="icon">
+                                    <a href="{{ url_for('index') }}">
+                                        <img src="{{ url_for('static', filename='images/blog/icon.svg') }}" alt="icon"/></a>
+
+                                </div>
+                            </div>
+                            <div class="latest-widget-content">
+                                <div class="content-title">
+                                    <a href="{{ url_for('index') }}">Five Things You Need to Know to Start Your Day</a>
+                                </div>
+                                <div class="content-meta">
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-clock-o"></i>
+                                            October 19, 2020 - 2 min
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="latest-widget">
+                            <div class="latest-widget-thum">
+                                <a href="{{ url_for('index') }}">
+                                    <img src="{{ url_for('static', filename='images/blog/blog-thum-8.png') }}"
+                                         alt="blog-thum"/></a>
+
+                                <div class="icon">
+                                    <a href="{{ url_for('index') }}">
+                                        <img src="{{ url_for('static', filename='images/blog/icon.svg') }}" alt="icon"/></a>
+
+                                </div>
+                            </div>
+                            <div class="latest-widget-content">
+                                <div class="content-title">
+                                    <a href="{{ url_for('index') }}">Five Things You Need to Know to Start Your Day</a>
+                                </div>
+                                <div class="content-meta">
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-clock-o"></i>
+                                            October 19, 2020 - 2 min
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
